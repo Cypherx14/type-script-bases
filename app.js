@@ -1,3 +1,6 @@
 "use strict";
-const msg = 'Hello, TypeScript!';
-console.log(msg);
+(() => {
+    const a = 10;
+    let b = 10;
+    console.log(a);
+})();
