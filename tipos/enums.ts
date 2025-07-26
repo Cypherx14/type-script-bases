@@ -3,9 +3,12 @@
     enum AudioLevel {
         min = 1,
         medium,
-        max,   
+        max =10,   
     }
 
-    const currentAudio = AudioLevel.medium;
+    let currentAudio = AudioLevel.medium;
+
+    console.log(currentAudio);
+    
 
 })();
