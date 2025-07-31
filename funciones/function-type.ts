@@ -4,10 +4,10 @@
     const saveTheWorld = () => `The world is saved!`;
 
     //tipo function 
-    // let myFunction: Function;
+    let myFunction: Function;
 
     //si quiero que retorne number, me va a dar error en las otras funciones 
-    let myFunction: (y:number, z: number) => number;
+    // let myFunction: (y:number, z: number) => number; descomentar para ver error
 
     // myFunction = 10; //error 
     // console.log(myFunction);
