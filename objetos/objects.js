@@ -15,3 +15,4 @@
     };
     console.log(flash.getName ? flash.getName() : 'No name function available');
 })();
+//# sourceMappingURL=objects.js.map

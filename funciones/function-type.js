@@ -16,3 +16,4 @@
     myFunction = saveTheWorld; // OK
     console.log(myFunction());
 })();
+//# sourceMappingURL=function-type.js.map
