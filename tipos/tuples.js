@@ -5,3 +5,4 @@
     hero[0] = 'Superman'; // This is valid
     console.log(hero);
 })();
+//# sourceMappingURL=tuples.js.map

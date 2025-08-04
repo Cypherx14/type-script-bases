@@ -8,3 +8,4 @@
     numbers.forEach(n => console.log(n * 2));
     villians.forEach(v => console.log(v.toUpperCase()));
 })();
+//# sourceMappingURL=arrays.js.map

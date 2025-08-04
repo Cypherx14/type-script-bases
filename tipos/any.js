@@ -14,3 +14,4 @@
     console.log(avenger.toFixed(2)); // 150.23
     console.log(exists); // undefined
 })();
+//# sourceMappingURL=any.js.map
