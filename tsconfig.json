@@ -113,6 +113,9 @@
   },
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "include": [
+    "ES6",
+  ],
 
 }
