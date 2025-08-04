@@ -27,8 +27,5 @@
         console.log(`Poder: ${poder}`);
     }
 
-    
-
-
-
+    printAvenger(avengers);
 })()
