@@ -29,12 +29,14 @@
 
     }
 
-    const antman = new Avenger('Antman', 'Avengers', 'Scott Lang');
-    const hawkeye = new Avenger('Hawkeye', 'Avengers');
-    console.log(antman);
-    console.log(hawkeye);
+    //descomnentar para ver funcionamiento de los metodos
 
-    console.log(antman.bio());
+    // const antman = new Avenger('Antman', 'Avengers', 'Scott Lang');
+    // const hawkeye = new Avenger('Hawkeye', 'Avengers');
+    // console.log(antman);
+    // console.log(hawkeye);
+
+    // console.log(antman.bio());
     
 
 })();
