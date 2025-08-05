@@ -1,44 +1,49 @@
 "use strict";
 (() => {
-    const avengers = {
-        nick: 'Nick Fury',
-        ironman: 'Tony Stark',
-        spiderman: 'Tom Holland',
-        activo: true,
-        poder: 1500,
-    };
-    const { nick, ironman, spiderman, activo, poder } = avengers;
-    const printAvenger = ({ nick, ironman, spiderman, activo, poder }) => {
-        console.log(`Nick: ${nick}`);
-        console.log(`Ironman: ${ironman}`);
-        console.log(`Spiderman: ${spiderman}`);
-        console.log(`Activo: ${activo}`);
-        console.log(`Poder: ${poder}`);
-    };
-    printAvenger(avengers);
-})();
-(() => {
-    const ironman = {
-        name: 'ironman',
-        weapon: 'Suit',
-    };
-    const captainAmerica = {
-        name: 'Capitan America',
-        weapon: 'Shield',
-    };
-    const thor = {
-        name: 'Thor',
-        weapon: 'Hammer',
-    };
-    const avengers = [ironman, captainAmerica, thor];
-    for (const avenger of avengers) {
-        console.log(`Name: ${avenger.name}`);
-        console.log(`Weapon: ${avenger.weapon}`);
+    class Avenger {
+        constructor(name, team, realName) {
+            this.name = name;
+            this.team = team;
+            this.realName = realName;
+        }
+        bio() {
+            return `(${this.realName}) as ${this.name} is part of ${this.team}`;
+        }
+        static getAvgAge() {
+            return this.avgAge;
+        }
     }
+    Avenger.avgAge = 35;
+    const antman = new Avenger('Antman', 'Avengers', 'Scott Lang');
+    const hawkeye = new Avenger('Hawkeye', 'Avengers');
+    console.log(antman);
+    console.log(hawkeye);
+    console.log(antman.bio());
 })();
 (() => {
-    const name = "Alex";
-    const user = { age: 30 };
-    user.age = 31;
+    class Avenger {
+        constructor(name, realName) {
+            this.name = name;
+            this.realName = realName;
+            console.log('Avenger created');
+        }
+        getFullName() {
+            return `${this.name} ${this.realName}`;
+        }
+    }
+    class Xmen extends Avenger {
+        constructor(name, realName, isMutant) {
+            super(name, realName);
+            this.isMutant = isMutant;
+            console.log('Xmen created');
+            super.getFullName();
+        }
+        getFullNamefromXmen() {
+            super.getFullName();
+        }
+    }
+    const wolverine = new Xmen('Wolverine', 'Logan', true);
+    console.log(wolverine);
+    wolverine.getFullNamefromXmen();
 })();
 //# sourceMappingURL=main.js.map
