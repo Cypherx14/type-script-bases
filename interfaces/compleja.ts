@@ -11,6 +11,7 @@
         //     city: string;
         // }
         address: Address; //recomendable usar una interface para la dirección
+        getFullAddress(id:string): string; //método 
     }
 
     //lo que se recomienda es crear una interface para la dirección
@@ -27,6 +28,9 @@
             id: 125,
             zip: '12345',
             city: 'New York',
+        },
+        getFullAddress(id: string): string {
+            return `${this.address.city}, ${this.address.zip}`; //método que retorna la dirección completa
         }
     }
 
@@ -37,6 +41,9 @@
             id: 126,
             zip: '54321',
             city: 'Los Angeles',
+        },
+         getFullAddress(id: string): string {
+            return `${this.address.city}, ${this.address.zip}`; //método que retorna la dirección completa
         }
     }
 
