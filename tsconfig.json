@@ -115,7 +115,7 @@
     "node_modules"
   ],
   "include": [
-    "interfaces",
+    "namespaces",
   ],
 
 }
